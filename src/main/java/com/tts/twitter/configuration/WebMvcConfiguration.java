@@ -1,4 +1,4 @@
-package com.tts.configuration;
+package com.tts.twitter.configuration;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -8,11 +8,13 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @Configuration
 public class WebMvcConfiguration implements WebMvcConfigurer {
-    @Bean
 
+    @Bean
     public BCryptPasswordEncoder passwordEncoder() {
+        
         BCryptPasswordEncoder bCryptPasswordEncoder =
-            new BCryptPasswordEncoder();
+                new BCryptPasswordEncoder();
+
         return bCryptPasswordEncoder;
     }
 }

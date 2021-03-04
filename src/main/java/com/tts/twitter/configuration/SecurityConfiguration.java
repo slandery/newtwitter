@@ -1,4 +1,4 @@
-package com.tts.configuration;
+package com.tts.twitter.configuration;
 
 
 import javax.sql.DataSource;
